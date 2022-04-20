@@ -29,14 +29,51 @@ body {
     background-color: var(--sidebar-bg-color);
     grid-row: 1 / 3;
     font-family: var(--sidebar-font);
+    font-weight: 600;
+    font-size: 18px;
     color: var(--sidebar-font-color);
 }
 
 .header {
     background-color: var(--header-bg-color);
+
 }
 
 .content-board {
     background-color: var(--content-bg-color);
 }
 
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 3fr 4fr;
+}
+
+.sidebar-first-row {
+  display: grid;
+  grid-template-columns: 1fr 5.5fr;
+  margin: 32px;
+/*   border: 2px solid green; */
+}
+
+.sidebar-second-row {
+  display: flex;
+  flex-direction: column;
+/*   border: 2px solid red; */
+  margin: 0 0 32px 65px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.sidebar-third-row {
+  display: flex;
+  flex-direction: column;
+/*   border: 2px solid blue; */
+  margin: 0 0 32px 65px;
+  gap: 20px;
+  
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
